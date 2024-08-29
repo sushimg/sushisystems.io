@@ -18,13 +18,11 @@ const Home: React.FC = () =>
       buttonAbout = {{ text: 'About Us', onClick: () => handleButtonClick('About Us') }}/>
 
       <div className="imageContainer">
-        <img className="mobileRTS" src="/mobileRTS.jpg" alt="Mobile RTS" />
+        <img className="mobileRTS" src="/mobileRTS.jpg" alt="mobileRTS"/>
           <header className="header">
             <h1>Play mobileRTS NOW.</h1>
 
-            <button className="buttonDownload">Download for Android
-              <img className = "androidLogo" src = "\AndroidLogo.png" alt = "img"></img>
-            </button>
+            <button className="buttonDownload">Download for Android</button>
           </header>
       </div>
 
