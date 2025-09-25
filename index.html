@@ -145,28 +145,5 @@
     <!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
-
-    <script>
-        const routes = 
-        {
-        "/": "home",
-        "/about": "about",
-        "/projects": "projects",
-        "/contact": "contact"
-        };
-
-        function renderRoute() 
-        {
-        const path = window.location.pathname;
-        const sectionId = routes[path] || "notfound"; // "notfound" senin 404 section id’si
-
-        document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
-        const active = document.getElementById(sectionId);
-        if (active) active.style.display = "block";
-        }
-
-        window.addEventListener("popstate", renderRoute);
-        window.addEventListener("DOMContentLoaded", renderRoute);
-    </script>
 </body>
 </html>
